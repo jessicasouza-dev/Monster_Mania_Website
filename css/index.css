@@ -1,0 +1,415 @@
+@font-face {
+  font-family: 'Danger Diabolik';
+  src: url('fonts/Danger Diabolik.ttf') format('woff2'), /* Substitua pelo caminho correto */
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+}
+
+.video {
+  padding-top: 10%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease 0s;
+    z-index: 10;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  opacity: 0%;
+}
+
+.logo-footer {
+  width: 150px;
+  height: auto;
+  opacity: 100%;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+header.rolagem{
+    background-color: #0b8044;
+    padding: 20px 4%;
+    box-shadow: 2px 2px 15px #000000;
+}
+
+
+header.rolagem ul{
+        margin-top: 3%;
+}
+
+header.rolagem button{
+    margin-top: 1%;
+}
+
+header.rolagem .logo{
+    margin-top: 1%;
+    opacity: 100%;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header nav{
+    margin-left: -100px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+header nav ul li a{
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(../images/banner5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .button{
+        padding: 6px 20px;
+        margin-right: 15px;
+        margin-top: -300px;
+        background-color: rgb(255, 255, 255);
+        color: #856DDA;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    /*GAMEPLAY*/
+
+    .gameplay {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 90%;
+      margin: auto;
+      margin-top: -30px;
+
+  }
+
+
+  .gameplay #gameplay-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+
+   #gameplay-titulo{
+      font-size: 32px;
+      text-align: center;
+      padding-top: 15px;
+      font-family: "Josefin Sans", sans-serif;
+      color: #eceeef;
+      font-weight: lighter;
+     
+  }
+
+  .gameplay #gameplay-texto #gameplay-descricao {
+      width: 85%;
+      text-align: justify;
+      font-family: "Afacad Flux", sans-serif;
+      letter-spacing: 0.2px;
+      padding: auto;
+      font-size: large;
+      color: #eceeef;
+      font-weight: normal;
+  }
+
+  .gameplay #gameplay-texto #gameplay-link {
+    width: 85%;
+    text-align: left;
+    font-family: "Afacad Flux", sans-serif;
+    letter-spacing: 0.2px;
+    padding: auto;
+    color: #eceeef;
+    font-size: large;
+    font-weight: normal;
+}
+
+  .gameplay #gameplay-texto #gameplay-link  a:hover {
+    font-weight: bolder;
+    color: #0b8044;
+
+}
+
+    /*ENEMIES*/
+
+    .enemies{
+      padding-top: 0%;
+      display: grid;
+      column-gap: 20px;
+      grid-template-columns: auto auto;
+      width: 80%;
+      margin: auto auto;
+      }
+      
+      
+      .enemies .img_enemies{
+      width: 92%;
+      align-items: center;
+      margin-left: 3%;
+      margin-top: 8%;
+      }
+      
+      
+      .enemies #enemies-texto{
+      padding: 15px 5px;
+      margin-left: 5%;
+      }
+      
+      
+      .enemies #enemies-texto #enemies-titulo{
+      padding: 20px 0px;
+      font-family: "Josefin Sans", sans-serif;
+      color: #eceeef;
+      font-weight: lighter;
+      }
+      
+      
+      .enemies #enemies-texto #enemies-description{
+      width: 92%;
+      text-align: justify;
+      font-family: "Afacad Flux", sans-serif;
+      letter-spacing: 0.2px;
+      font-weight: 200px;
+      color: #eceeef;
+      font-size: large;
+      }
+
+    /*POWER UPS*/
+
+    .power_ups{
+      padding-top: 3%;
+      display: grid;
+      column-gap: 50px;
+      grid-template-columns: auto auto;
+      width: 90%;
+      margin: auto auto;
+  }
+
+
+  .power_ups .img_power_ups{
+      width: 70%;
+      align-items: center;
+      margin-left: 20%;
+  }
+
+
+  .power_ups #power_ups-texto{
+      padding: 15px 15px;
+  }
+
+
+  .power_ups #power_ups-texto #power_ups-titulo{
+      padding: 20px 0px;
+      font-family: "Josefin Sans", sans-serif;
+      color: #eceeef;
+      font-weight: lighter;
+  }
+
+
+  .power_ups #power_ups-texto #power_ups-description{
+      width: 85%;
+      text-align: justify;
+      font-family: "Afacad Flux", sans-serif;
+      letter-spacing: 0.2px;
+      font-weight: 200px;
+      font-size: large;
+      color: #eceeef;
+  }
+
+
+
+  /*CREDITS*/
+
+  .credits{
+    padding-top: 0%;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: auto auto;
+    }
+    
+    
+    .credits .img_credits{
+    width: 92%;
+    align-items: center;
+    margin-left: 3%;
+    margin-top: 8%;
+    }
+    
+    
+    .credits #credits-texto{
+    padding: 15px 5px;
+    margin-left: 5%;
+    }
+    
+    
+    .credits #credits-texto #credits-titulo{
+    padding: 20px 0px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #eceeef;
+    font-weight: lighter;
+    }
+    
+    
+    .credits #credits-texto #credits-description{
+    width: 92%;
+    text-align: justify;
+    font-family: "Afacad Flux", sans-serif;
+    letter-spacing: 0.2px;
+    font-weight: 200px;
+    color: #eceeef;
+    font-size: large;
+    }
+
+
+
+
+  /*footer*/
+
+.site-footer
+{
+  font-family: "Afacad Flux", sans-serif;
+  background-color:#0b8044;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color: white;
+  font-size: large;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: large;
+}
+
+.site-footer a
+{
+  color:white;
+}
+.site-footer a:hover
+{
+  font-weight: bolder;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none;
+  width: auto;
+}
+.footer-links li
+{
+  display:block;
+}
+.footer-links a
+{
+  color: white;
+  text-decoration: none;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  font-weight: bolder;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block;
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color: white;
+}
+.copyright-text
+{
+  margin:0;
+  font-size: 13px;
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center;
+  }
+}
